@@ -204,9 +204,12 @@ int main(void)
 		{
 			f_open(&myFILE, myPath, FA_OPEN_APPEND | FA_WRITE );	
 
+			char asd [10];
+			sprintf(asd,"%d %d \n\r",count );
 		
-			f_write(&myFILE, myData, sizeof(myData), &testByte);
+			f_write(&myFILE, asd, sizeof(asd), &testByte);
 			f_close(&myFILE);
+			HAL_Delay(1000);
 			
 		}
 		
