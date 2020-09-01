@@ -1,4 +1,4 @@
-hal_display16x2_sdcard\tm_stm32_usart.o: ..\..\..\..\Desktop\Digitales 2 Proyecto Final\Contamicrap\Src\tm_stm32_usart.c
+hal_display16x2_sdcard\tm_stm32_usart.o: ..\Src\tm_stm32_usart.c
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Inc/tm_stm32_usart.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Inc/stm32fxxx_hal.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
@@ -24,18 +24,13 @@ hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
-hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
-hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
-hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
-hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
-hal_display16x2_sdcard\tm_stm32_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Inc/attributes.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Inc/defines.h
 hal_display16x2_sdcard\tm_stm32_usart.o: ../Inc/tm_stm32_gpio.h

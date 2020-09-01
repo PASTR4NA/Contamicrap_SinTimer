@@ -1,7 +1,8 @@
 [PreviousGenFiles]
 HeaderPath=C:/Users/Nasha/Desktop/Contamicrap/Inc
+HeaderPath=C:/Users/Facu/Desktop/Contamicrap-master/Inc
 HeaderFiles=ffconf.h;bsp_driver_sd.h;sd_diskio.h;fatfs.h;fatfs_platform.h;stm32f4xx_it.h;stm32f4xx_hal_conf.h;main.h;
-SourcePath=C:/Users/Nasha/Desktop/Contamicrap/Src
+SourcePath=C:/Users/Facu/Desktop/Contamicrap-master/Src
 SourceFiles=bsp_driver_sd.c;sd_diskio.c;fatfs.c;fatfs_platform.c;stm32f4xx_it.c;stm32f4xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]

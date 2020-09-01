@@ -37,6 +37,8 @@ hal_display16x2_sdcard\syscall.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_
 hal_display16x2_sdcard\syscall.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 hal_display16x2_sdcard\syscall.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
 hal_display16x2_sdcard\syscall.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+hal_display16x2_sdcard\syscall.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+hal_display16x2_sdcard\syscall.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 hal_display16x2_sdcard\syscall.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 hal_display16x2_sdcard\syscall.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 hal_display16x2_sdcard\syscall.o: ../Inc/bsp_driver_sd.h

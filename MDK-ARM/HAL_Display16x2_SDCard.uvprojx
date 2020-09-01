@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy; ../Middlewares/Third_Party/FatFs/src; ../Drivers/CMSIS/Device/ST/STM32F4xx/Include; ../Drivers/CMSIS/Include; ..\..\HAL_Display16x2_SDCard; ..\..\HAL_Display16x2_SDCard</IncludePath>
+              <IncludePath>../Inc;      ../Drivers/STM32F4xx_HAL_Driver/Inc;      ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;      ../Middlewares/Third_Party/FatFs/src;      ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;      ../Drivers/CMSIS/Include;      ..\..\HAL_Display16x2_SDCard;      ..\..\HAL_Display16x2_SDCard</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -408,6 +408,21 @@
               <FilePath>..\Src\STM_MY_LCD16X2.c</FilePath>
             </File>
             <File>
+              <FileName>sht3x.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\sht3x.c</FilePath>
+            </File>
+            <File>
+              <FileName>bmp085.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\bmp085.h</FilePath>
+            </File>
+            <File>
+              <FileName>bmp085.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\bmp085.c</FilePath>
+            </File>
+            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/main.c</FilePath>
@@ -442,36 +457,21 @@
               <FileType>1</FileType>
               <FilePath>../Src/stm32f4xx_hal_msp.c</FilePath>
             </File>
-            <File>
-              <FileName>sht3x.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\sht3x.c</FilePath>
-            </File>
-            <File>
-              <FileName>bmp085.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Inc\bmp085.h</FilePath>
-            </File>
-            <File>
-              <FileName>bmp085.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\bmp085.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_hal_usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\Desktop\Digitales 2 Proyecto Final\Contamicrap\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_hal_usart.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\Desktop\Digitales 2 Proyecto Final\Contamicrap\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_usart.h</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Drivers/STM32F4xx_HAL_Driver</GroupName>
           <Files>
+            <File>
+              <FileName>BH1750.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\BH1750.h</FilePath>
+            </File>
+            <File>
+              <FileName>BH1750.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\BH1750.c</FilePath>
+            </File>
             <File>
               <FileName>stm32f4xx_hal_adc.c</FileName>
               <FileType>1</FileType>
@@ -583,14 +583,24 @@
               <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c</FilePath>
             </File>
             <File>
-              <FileName>BH1750.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Inc\BH1750.h</FilePath>
+              <FileName>stm32f4xx_ll_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Digitales 2 Proyecto Final\Contamicrap\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usart.c</FilePath>
             </File>
             <File>
-              <FileName>BH1750.c</FileName>
+              <FileName>stm32f4xx_ll_usart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Digitales 2 Proyecto Final\Contamicrap\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usart.h</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_usart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Digitales 2 Proyecto Final\Contamicrap\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_usart.h</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Src\BH1750.c</FilePath>
+              <FilePath>..\..\Digitales 2 Proyecto Final\Contamicrap\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_usart.c</FilePath>
             </File>
           </Files>
         </Group>

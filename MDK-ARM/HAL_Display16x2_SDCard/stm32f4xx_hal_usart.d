@@ -1,4 +1,4 @@
-hal_display16x2_sdcard\stm32f4xx_hal_usart.o: ..\..\..\..\Desktop\Digitales 2 Proyecto Final\Contamicrap\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_usart.c
+hal_display16x2_sdcard\stm32f4xx_hal_usart.o: ..\..\Digitales 2 Proyecto Final\Contamicrap\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_usart.c
 hal_display16x2_sdcard\stm32f4xx_hal_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 hal_display16x2_sdcard\stm32f4xx_hal_usart.o: ../Inc/stm32f4xx_hal_conf.h
 hal_display16x2_sdcard\stm32f4xx_hal_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
@@ -33,4 +33,6 @@ hal_display16x2_sdcard\stm32f4xx_hal_usart.o: ../Drivers/STM32F4xx_HAL_Driver/In
 hal_display16x2_sdcard\stm32f4xx_hal_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 hal_display16x2_sdcard\stm32f4xx_hal_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
 hal_display16x2_sdcard\stm32f4xx_hal_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+hal_display16x2_sdcard\stm32f4xx_hal_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+hal_display16x2_sdcard\stm32f4xx_hal_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 hal_display16x2_sdcard\stm32f4xx_hal_usart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h

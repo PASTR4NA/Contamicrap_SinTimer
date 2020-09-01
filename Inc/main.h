@@ -30,8 +30,6 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
 
-
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stm32f4xx_hal_adc.h"
@@ -110,11 +108,14 @@ void Error_Handler(void);
 #define RS_GPIO_Port GPIOE
 #define E_Pin GPIO_PIN_1
 #define E_GPIO_Port GPIOE
-
-
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
+
+
+
+
+	
 
 #ifdef __cplusplus
 }
