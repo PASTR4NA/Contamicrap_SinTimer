@@ -91,6 +91,7 @@ float BH1750_lux;
 	FIL myFILE;
 	UINT testByte;
 		char myData[] = "Hello Worldasdas\0";
+			char myPath[] = "WRITE1.TXT\0";
 
 /* USER CODE END PV */
 
@@ -155,6 +156,8 @@ int main(void)
   MX_I2C3_Init();
   MX_USART2_UART_Init();
   MX_TIM2_Init();
+	BH1750_Init(&hi2c2);
+  BH1750_SetMode(CONTINUOUS_HIGH_RES_MODE_2);
   /* USER CODE BEGIN 2 */
 
 	//Timer2
@@ -186,8 +189,7 @@ int main(void)
 
 		f_write(&myFILE, myData, sizeof(myData), &testByte);
 		f_close(&myFILE);
-		HAL_Delay(1000);
-		HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
+
 	}
 
 	char buff[20];
@@ -197,6 +199,17 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+			if(f_mount(&myFATAFS, SDPath, 1) == FR_OK)
+		{
+			f_open(&myFILE, myPath, FA_OPEN_APPEND | FA_WRITE );	
+
+		
+			f_write(&myFILE, myData, sizeof(myData), &testByte);
+			f_close(&myFILE);
+			
+		}
+		
 		//Imprimir en el Display
 		
 		SHT3X_Update();
@@ -235,37 +248,26 @@ int main(void)
 	  }
 		
 		
-		USART_Puts(USART2,"ASD");
+		//USART_Puts(USART2,"ASD");
 		
 	
 		
-		
-		
-		
-
+				sprintf(buff, "ContamiKrap : %d", count++);
+				LCD1602_1stLine();
 		LCD1602_print(buff);
+
+
+	
+			//sprintf(buff, ": %0.2lf %0.2lf ", 0.6,0.8);
 		LCD1602_2ndLine();
+		LCD1602_print("negro de meirda");
 
-		sprintf(buff, "ContamiKrap : %d", count++);
-		sprintf(buff, ": %0.2lf %0.2lf ", humidity,temperature);
 
-		LCD1602_print(buff);
-		LCD1602_1stLine();
-/*
-		
-		if (f_mount(&myFATAFS, SDPath, 1) == FR_OK)
-		{
-			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
-			char myPath[] = "WRITE1.TXT\0";
-			f_open(&myFILE, myPath, FA_OPEN_APPEND | FA_WRITE);
-			char myData[] = "VH negro trolen\0";
-			f_write(&myFILE, buff, sizeof(buff), &testByte);
-			f_close(&myFILE);
-			HAL_Delay(200);
-			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
-		}
-		
-		*/
+
+
+
+
+
 	}
   /* USER CODE END 3 */
 }
@@ -514,7 +516,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 16000;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 10000;
+  htim2.Init.Period = 50000;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -631,19 +633,12 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
             the HAL_TIM_PeriodElapsedCallback could be implemented in the user file
    */
 	HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_14);
-	/*
-		if (f_mount(&myFATAFS, SDPath, 1) == FR_OK)
-		{
-			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
-			char myPath[] = "WRITE1.TXT\0";
-			f_open(&myFILE, myPath, FA_OPEN_APPEND | FA_WRITE);
-			//char myData[] = "VH negro trolen\0";
-			f_write(&myFILE, buff, sizeof(buff), &testByte);
-			f_close(&myFILE);
-			HAL_Delay(200);
-			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
-		}
-	*/
+	
+
+
+
+
+	
 	
 }
 

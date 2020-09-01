@@ -32,19 +32,19 @@ compiling main.c...
   #endif /* BMP180_H_ */
 ../Inc/BH1750.h(51): warning:  #1-D: last line of file ends without a newline
   #endif /* BH1750_H_ */
-../Src/main.c(232): warning:  #223-D: function "sprintf" declared implicitly
+../Src/main.c(246): warning:  #223-D: function "sprintf" declared implicitly
   			sprintf(buff, "H: %.2f\t T: %.2f\t T: %.2f\t P: %d\t A: %.2f\t Lx: %.2f\t ADC1: %d\t ADC2: %d\t ADC3: %d\r\n",humidity, temperature, bmp.data.temp, bmp.data.press, bmp.data.altitude,BH1750_lux*2,adc1,adc2,adc3);		
-../Src/main.c(249): warning:  #223-D: function "sprintf" declared implicitly
-  		sprintf(buff, "ContamiKrap : %d", count++);
-../Src/main.c(166): warning:  #177-D: variable "altitud"  was declared but never referenced
+../Src/main.c(256): warning:  #223-D: function "sprintf" declared implicitly
+  				sprintf(buff, "ContamiKrap : %d", count++);
+../Src/main.c(169): warning:  #177-D: variable "altitud"  was declared but never referenced
   	float altitud = 0.0;
-../Src/main.c(167): warning:  #177-D: variable "temp"  was declared but never referenced
+../Src/main.c(170): warning:  #177-D: variable "temp"  was declared but never referenced
   	float temp = 0.0;
-../Src/main.c(626): warning:  #177-D: variable "buff"  was declared but never referenced
+../Src/main.c(629): warning:  #177-D: variable "buff"  was declared but never referenced
   		char buff[20];
 ../Src/main.c: 7 warnings, 0 errors
 linking...
-Program Size: Code=29084 RO-data=856 RW-data=132 ZI-data=18132  
+Program Size: Code=29304 RO-data=852 RW-data=144 ZI-data=18136  
 FromELF: creating hex file...
 "HAL_Display16x2_SDCard\HAL_Display16x2_SDCard.axf" - 0 Error(s), 7 Warning(s).
 
@@ -69,7 +69,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.3.0
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>
